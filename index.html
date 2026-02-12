@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>barbearia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111, #1f1f1f);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #c59d5f;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #e0b76d;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: #181818;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #c59d5f;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .item {
+      background: #222;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .item h3 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .item p {
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPO -->
+  <header>
+    <h1>barbearia</h1>
+    <p>Seu visual em boas mãos ✂️</p>
+    <a href="https://wa.me/5599999999999" class="btn" target="_blank">Agendar pelo WhatsApp</a>
+  </header>
+
+  <!-- HORÁRIOS -->
+  <section>
+    <div class="card">
+      <h2>⏰ Horários de Funcionamento</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>terça a Sabado</h3>
+          <p>09:00 às 19:00</p>
+        </div>
+        <div class="item">
+          <h3>domingo</h3>
+          <p>ate às 12:00</p>
+        </div>
+        <div class="item">
+          <h3>segunda</h3>
+          <p>Fechado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS E PREÇOS -->
+  <section>
+    <div class="card">
+      <h2>💈 Serviços & Valores</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>Corte Masculino</h3>
+          <p>R$ 30,00</p>
+        </div>
+        <div class="item">
+          <h3>Barba</h3>
+          <p>R$ 20,00</p>
+        </div>
+        <div class="item">
+          <h3>Corte + Barba</h3>
+          <p>R$ 45,00</p>
+        </div>
+        <div class="item">
+          <h3>Sobrancelha</h3>
+          <p>R$ 10,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO / CONTATO -->
+  <section>
+    <div class="card">
+      <h2>📍 Onde Estamos</h2>
+      <p style="margin-bottom: 20px; color: #ccc;">Rua exemplo, 123 — Bairro </p>
+      <a href="https://www.instagram.com/seuinstagram" class="btn" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 barbearia — Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
